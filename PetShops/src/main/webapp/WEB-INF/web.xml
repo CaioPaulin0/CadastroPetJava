@@ -1,0 +1,21 @@
+<web-app>
+    <servlet>
+        <servlet-name>CachorroServlet</servlet-name>
+        <servlet-class>controller.CachorroServlet</servlet-class>
+    </servlet>
+    
+    <servlet>    
+        <servlet-name>GatoServlet</servlet-name>
+        <servlet-class>controller.GatoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CachorroServlet</servlet-name>
+        <url-pattern>/CachorroServlet</url-pattern>
+        
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>GatoServlet</servlet-name>
+        <url-pattern>/GatoServlet</url-pattern>
+    </servlet-mapping>
+</web-app>

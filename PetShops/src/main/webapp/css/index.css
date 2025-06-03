@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+body{
+	background-color: rgb(238, 238, 238);
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+.main{
+	max-width: 600px;
+	width: 100%;
+	height: max-content;
+	display: flex;
+	flex-direction: column;
+	gap: 80px;
+	margin: auto;
+}
+
+.main h2{
+	font-size: 52px;
+	text-align: center;
+	color: #151515;
+}
+
+.selectPet{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.cardPet{
+	box-sizing: content-box;
+	padding: 20px 30px;
+	display: flex;
+	border-radius: 8px;
+	box-shadow: 0 0 1em rgba(8, 8, 8, 0.315);
+	background-color: #0080bb;
+	cursor: pointer;
+	flex-direction: column;
+	justify-content: center;
+	transition: 0.3s;
+}
+
+.cardPet:hover{
+	transform:scale(1.1);
+}
+
+.cardPet img{
+	width: 150px;
+	height: 150px;
+	margin: 0 auto;
+}
+
+.cardPet strong{
+	text-align: center;
+	color: aliceblue;
+}
+
+.form form{
+	height: 180px;
+	background-color: #0080bb;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 17px;
+	font-size: 22px;
+	border-radius: 8px;
+	box-shadow: 0 0 1em rgba(8, 8, 8, 0.445);
+}
+
+.form div{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+.form div label{
+	color: #f3f3f3;
+}
+
+.form div input{
+	max-width: 150px;
+	border: none;
+	padding: 4px;
+}
+
+.form button{
+	font-size: 16px;
+	border: none;
+	color: #ffffff;
+	background-color: #2dbf64;
+	padding: 8px;
+	cursor: pointer;
+	transition: 0.2s;
+	margin-top: 20x;
+	border-radius: 4px;
+}
+
+.form button:hover{
+	box-shadow: 0 0 1em rgba(0, 0, 0, 0.219);
+	background-color: #259e53;
+}
+
+.btnVoltar{
+	width: 100%;
+	font-size: 16px;
+	border: none;
+	color: #ffffff;
+	background-color: #143781;
+	padding: 8px;
+	cursor: pointer;
+	transition: 0.2s;
+	margin-top: 20x;
+	border-radius: 4px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.btnVoltar:hover{
+	background-color: #143781;
+}
+
+.FormCont{
+	max-width: 280px;
+	width: 100%;
+	height: max-content;
+}
+
+@media  (max-width: 520px) {
+	.main{
+		box-sizing: border-box;
+		padding: 20px;
+	}
+	
+	.selectPet{
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	.FormCont{
+		max-width: 100%;
+	}
+
+	.form div{
+		gap: 20px;
+	}
+
+	.form div input{
+		max-width: 300px;
+	}
+}

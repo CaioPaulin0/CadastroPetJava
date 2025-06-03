@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+body{
+	background-color: rgb(238, 238, 238);
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.main{
+	max-width: 600px;
+	width: 100%;
+	height: max-content;
+	display: flex;
+	flex-direction: column;
+	gap: 80px;
+	margin: auto;
+}
+
+.textMain{
+	height: 180px;
+	display: flex;
+	flex-direction: column;
+}
+
+.textMain h2{
+	font-size: 52px;
+	text-align: center;
+	color: #151515;
+}
+
+.infoPet{
+	width: 100%;
+	font-size: 30px;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	padding: 10px 20px;
+	background-color: #0080bbd0;
+	border-radius: 8px;
+	box-sizing: border-box;
+}
+
+
+
+.infoPet div{
+	width: 300px;
+	color: rgb(255, 255, 255);
+}
+
+.infoPet img{
+	width: 180px;
+	height: 180px;
+}
+
+@media (max-width:500px){
+	.infoPet{
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	.infoPet div{
+		width: max-content;
+		margin: auto;
+	}
+
+	.infoPet img{
+		margin: auto;
+	}
+	
+	.main{
+		box-sizing: border-box;
+		padding: 20px;
+	}
+}
+
+.btnVoltar{
+width: 100%;
+    font-size: 16px;
+    border: none;
+    color: #ffffff;
+    background-color: #143781;
+    padding: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    text-align: center;
+}
